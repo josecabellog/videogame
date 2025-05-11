@@ -1,0 +1,86 @@
+/* static/css/about.css */
+
+/* ===== Base Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* ===== Main Content Styles ===== */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+h1 {
+    color: #1a73e8;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #1a73e8, #34a853);
+    border-radius: 2px;
+}
+
+/* ===== Gaming-Themed Elements ===== */
+.about-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.gaming-feature {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #1a73e8;
+}
+
+.gaming-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #1a73e8;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .gaming-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .gaming-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,11 +1,18 @@
+{% extends 'includes/navbar.html' %}
+
+{% block content %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1UP videogames 🎮</title>
+    <title>1UP videogames</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
 </head>
 <body>
-    <h1>I am a tittle</h1>
+    <h1>I am a title 😊</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ullam eaque sequi vel optio harum, sint quia consectetur fugiat fuga cum nam totam pariatur est voluptates ut itaque debitis amet!</p>
+    {% endblock %}
 </body>
 </html>
